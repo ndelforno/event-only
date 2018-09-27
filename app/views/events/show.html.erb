@@ -1,1 +1,5 @@
-events#show page
+<h1><%= @event.name %></h1>
+
+<%= render 'event', event: @event %>
+
+<%= link_to 'Delete', events_path(@event), method: :delete %>
